@@ -1,12 +1,38 @@
-# React + Vite
+# 🔗 Linkd-Q
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Linkd-Q** is a sleek, personalized link management application that allows users to save, organize, and access their favorite links with custom titles — all in one place.
 
-Currently, two official plugins are available:
+🚀 Live App: [linkdq.vercel.app](https://linkdq.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📌 Add and save links with custom titles
+- 🗂️ Organize your personal collection of links
+- ⚡ Instant access to your saved links from anywhere
+- 🖥️ Built with ReactJS for a fast and modern experience
+- ☁️ Hosted on Vercel for quick deployment and performance
+
+---
+## 📌 How To Use
+
+1. Click the **Create+** button to add a new link with a custom title.
+2. Click once on any saved link to **copy** it to your clipboard.
+3. Double-click on a saved link to **delete** it from your list.
+
+---
+## 🛠 Tech Stack
+
+- **Framework:** ReactJS, Jotai (State Managment)
+- **Deployment:** Vercel
+
+---
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+## 🙋‍♂️ Want to Contribute?
+
+Feel free to open issues or pull requests to improve Linkd-Q!
