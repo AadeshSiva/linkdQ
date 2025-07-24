@@ -77,17 +77,36 @@
 .home-container {
   height: 100%;
   padding: 1em;
+  padding-bottom: 2em;
 }
 
+.startcon {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.startcon-in {
+  /* text-align: center; */
+  padding: 1em;
+}
+.startcon-txt{
+  font-family: monospace;
+  line-height: 1.7em;
+  color: #909090;
+  b{
+    color: #72e890;
+  }
+}
 .links {
   margin-bottom: 0.7em;
   padding: 1em;
-  background-color: #707070;
+  background-color: #70707074;
   display: flex;
   align-items: center;
   border-radius: 5px;
   gap: 0.7em;
-
+  
 }
 
 .links-content {
@@ -110,6 +129,7 @@
   align-items: center;
   gap: 1.5em;
   cursor: pointer;
+  color: #939393;
 }
 
 /* Create----------------> */
@@ -178,13 +198,13 @@
 .name {
 
   position: fixed;
-  right: 1em;
+  right: 1.5em;
   bottom: 1em;
   font-family: monospace;
   color: #767676;
+  font-size: smaller;
 
   a {
     color: #7777ff;
-    font-style: italic;
   }
 }

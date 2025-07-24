@@ -1,6 +1,8 @@
 import linked from '/linkedin.svg';
 import github from '/github.svg';
 import empty from '/empty.svg';
+import youtube from '/youtube.svg'
+import instagram from '/instagram.svg';
 
 import { BiCopy } from 'react-icons/bi';
 import { IoIosCheckmarkCircle } from 'react-icons/io';
@@ -56,37 +58,52 @@ export default function Home() {
 
     return (
         <main className="home-container">
-            {linkdq.map((l) => (
-                <div
-                    className="links"
-                    key={l.id}
-                    onDoubleClick={() => handleDelete(l.id)}
-                >
-                    <div className="links-content">
-                        <img
-                            src={
-                                l.link.toLowerCase().includes('linkedin') ? linked :
-                                    l.link.toLowerCase().includes('github') ? github :
-                                        empty
-                            }
-                            alt="logo"
-                        />
-                        {l.title}
-                    </div>
-                    <span
-                        className="links-inner-btns"
-                        onClick={() => handleCopy(l.link, l.id)}
-                        onTouchEnd={() => handleCopy(l.link, l.id)}
-                        style={{ cursor: 'pointer' }}
+            {linkdq.length > 0 ? (
+                linkdq.map((l) => (
+                    <div
+                        className="links"
+                        key={l.id}
+                        onDoubleClick={() => handleDelete(l.id)}
                     >
-                        {copiedId === l.id ? (
-                            <IoIosCheckmarkCircle color="greenyellow" size={20} />
-                        ) : (
-                            <BiCopy size={20} />
-                        )}
-                    </span>
+                        <div className="links-content">
+                            <img
+                                src={
+                                    l.link.toLowerCase().includes('linkedin') ? linked :
+                                        l.link.toLowerCase().includes('github') ? github :
+                                            l.link.toLowerCase().includes('youtu') ? youtube :
+                                                l.link.toLowerCase().includes('insta') ? instagram :
+                                                    empty
+                                }
+                                alt="logo"
+                            />
+                            {l.title}
+                        </div>
+                        <span
+                            className="links-inner-btns"
+                            onClick={() => handleCopy(l.link, l.id)}
+                            onTouchEnd={() => handleCopy(l.link, l.id)}
+                            style={{ cursor: 'pointer' }}
+                        >
+                            {copiedId === l.id ? (
+                                <IoIosCheckmarkCircle color="greenyellow" size={20} />
+                            ) : (
+                                <BiCopy size={20} />
+                            )}
+                        </span>
+                    </div>
+                ))
+            ) : (
+                <div className="startcon">
+                    <div className="startcon-in">
+                        <p className='startcon-txt'><i>linkdQ</i> is a personal link manager <br />
+                            - <i>Add</i> links using <b onClick={() => { setopncreate(true) }}>create</b>.<br />
+                            - <i>Copy</i> links in single tap.<br />
+                            - <i>Delete</i> links by double tapping.
+                        </p>
+                    </div>
                 </div>
-            ))}
+            )}
         </main>
     );
+
 }

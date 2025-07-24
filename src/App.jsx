@@ -18,7 +18,7 @@ function App() {
 
           {opncreate ? <Create /> : <Home />}
         </div>
-        <p className="name">developed by <a href="https://aadeshsiva.vercel.app/">@aadesh</a></p>
+        <p className="name">developed by <a href="https://aadeshsiva.vercel.app/">me</a></p>
       </main>
     </>
   )
