@@ -65,7 +65,7 @@ export default function Home() {
                         key={l.id}
                         onDoubleClick={() => handleDelete(l.id)}
                     >
-                        <div className="links-content">
+                        <a href={l.link} className="links-content">
                             <img
                                 src={
                                     l.link.toLowerCase().includes('linkedin') ? linked :
@@ -77,7 +77,7 @@ export default function Home() {
                                 alt="logo"
                             />
                             {l.title}
-                        </div>
+                        </a>
                         <span
                             className="links-inner-btns"
                             onClick={() => handleCopy(l.link, l.id)}
