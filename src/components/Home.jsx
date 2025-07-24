@@ -96,9 +96,14 @@ export default function Home() {
                 <div className="startcon">
                     <div className="startcon-in">
                         <p className='startcon-txt'><i>linkdQ</i> is a personal link manager <br />
-                            - <i>Add</i> links using <b onClick={() => { setopncreate(true) }}>create</b>.<br />
+                            - <i>Add</i> links using <b className='startcon-high' onClick={() => { setopncreate(true) }}>create</b>.<br />
                             - <i>Copy</i> links in single tap.<br />
                             - <i>Delete</i> links by double tapping.
+                        </p><br />
+                        <p className='startcon-txt'><i>How to </i><b>install</b>?<br />
+                                - Open using <i>Browser</i>.<br />
+                                - Click <i>Add to home screen</i>. <br />
+                                - In the popup, click <i>Install</i>.
                         </p>
                     </div>
                 </div>

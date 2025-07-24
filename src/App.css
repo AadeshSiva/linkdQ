@@ -94,10 +94,10 @@
   font-family: monospace;
   line-height: 1.7em;
   color: #909090;
+}
 
-  b {
-    color: #72e890;
-  }
+.startcon-high {
+  color: #72e890;
 }
 
 .links {
